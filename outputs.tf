@@ -3,7 +3,7 @@
 #   sensitive = true
 # }
 
-# output "vault_boundary_ssh_ca" {
-#   value = chomp(data.vault_generic_secret.boundary_ca_public_key.data["public_key"])
-#   sensitive = true
-# }
+output "vault_boundary_ssh_ca" {
+  value = chomp(data.vault_generic_secret.boundary_ca_public_key.data["public_key"])
+  sensitive = true
+}
